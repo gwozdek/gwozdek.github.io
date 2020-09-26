@@ -3,19 +3,41 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-
 	<title>Michał M. Gwozdek</title>
-	<meta name="description" content="Welcome to my Homepage!">
+	<meta name="description" content="Welcome to my tiny homepage! Only contact details are provided here.">
 	<meta name="author" content="Michał M. Gwozdek">
 	<style>
-		body {background-color: #0f380f; font-family: "Lucida Console", Monaco, monospace;}
-		h1   {color: #9bbc0f;}
-		p    {color: #cadc9f;}
+
+		@font-face {
+			font-family: 'Jura';
+			font-style: normal;
+			font-weight: 400;
+			src: local(''),
+			url('./fonts/jura-v15-latin-regular.woff2') format('woff2'),
+			url('./fonts/jura-v15-latin-regular.woff') format('woff');
+		}
+		body {background-color: #0f380f; font-family: 'Jura', sans-serif;}
+		h1   {color: #9bbc0f; font-size:4vw; margin:0; font-weight: normal;}
+		p    {color: #cadc9f; font-size:4vw; margin:0; margin-top:2%;}
+		div
+		{
+			position: fixed;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			border: solid;
+			border-width: thin;
+			border-color: #306230;
+			padding: 2%;
+			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+		}
 	</style>
 </head>
-
 <body>
-	<h1>マイケル</h1>
-	<p>So I'm taking my work underground, I can't let it fall into the wrong hands again.</p>
+<div>
+	<h1><img src="./gfx/michal-m-gwozdek.svg" alt="Michał M. Gwozdek"></h1>
+	<p>michal@gwozdek.art</p>
+	<p>SMS: +48 511 901 900</p>
+</div>
 </body>
 </html>
