@@ -16,18 +16,33 @@
 			url('./fonts/jura-v15-latin-regular.woff2') format('woff2'),
 			url('./fonts/jura-v15-latin-regular.woff') format('woff');
 		}
-		body {background-color: #0f380f; font-family: 'Jura', sans-serif;}
-		h1   {color: #9bbc0f; font-size:4vw; margin:0; font-weight: normal;}
-		p    {color: #cadc9f; font-size:4vw; margin:0; margin-top:2%;}
+		html
+		{
+			min-height: 100%;
+		}
+		body
+		{
+			background-color: #001261;
+			font-family: 'Jura', sans-serif;
+			min-height: 100%;
+			background-image: url('./gfx/background.svg');
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center center;
+
+		}
+		h1   {color: #FFFFFF; font-size:4vw; margin:0; font-weight: normal;}
+		p    {color: #B983EA; font-size:4vw; margin:0; margin-top:2%;}
 		div
 		{
+			background-color: rgba(0,11,58,0.81);
 			position: fixed;
 			top: 50%;
 			left: 50%;
 			transform: translate(-50%, -50%);
 			border: solid;
 			border-width: thin;
-			border-color: #306230;
+			border-color: #311693;
 			padding: 2%;
 			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 			-webkit-tap-highlight-color: transparent;
@@ -42,8 +57,7 @@
 <body>
 <div>
 	<h1><img src="./gfx/michal-m-gwozdek.svg" alt="Michał M. Gwozdek"></h1>
-	<p>michal@gwozdek.art</p>
-	<p>SMS: +48 511 901 900</p>
+	<p>SMS: +48 510 903 900</p>
 </div>
 </body>
 </html>
